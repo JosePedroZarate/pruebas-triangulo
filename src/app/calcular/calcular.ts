@@ -9,10 +9,16 @@ export class calcular {
 
     area(base,altura){
         
-        if(base == null && altura == null) 
+        if(base === undefined && altura === undefined) 
             return "Syntaxis error";
         
-        if(base == null || altura == null) 
+        if(base === undefined || altura === undefined) 
+            return "Syntaxis error";
+
+        if(base === null && altura === null) 
+            return "Syntaxis error";
+        
+        if(base === null || altura === null) 
             return "Syntaxis error";
         
         if(Math.sign(base) === -1 && Math.sign(altura) === -1)

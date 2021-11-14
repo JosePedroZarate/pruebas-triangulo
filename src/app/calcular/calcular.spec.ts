@@ -10,6 +10,19 @@ describe('calcular', () => {
     it('should create', () => {
         expect(component).toBeTruthy();
     });
+    
+    it('should return "Syntaxis error" when "base" and "altura" are undefined', () => {
+        expect(component.area(undefined, undefined)).toContain("Syntaxis error");       
+    });
+
+    it('should return "Syntaxis error" when "base" or "altura" are undefined', () => {
+        expect(component.area(undefined, 6)).toContain("Syntaxis error");       
+    });
+
+    it('should return "Syntaxis error" when "base" or "altura" are undefines', () => {
+        expect(component.area(3, undefined)).toContain("Syntaxis error");       
+    });
+
 
     it('should return "Syntaxis error" when "base" and "altura" are null', () => {
         expect(component.area(null, null)).toContain("Syntaxis error");       
