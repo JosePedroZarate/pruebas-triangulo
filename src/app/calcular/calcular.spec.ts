@@ -11,6 +11,18 @@ describe('calcular', () => {
         expect(component).toBeTruthy();
     });
 
+    it('should return "Syntaxis error" when "base" and "altura" are null', () => {
+        expect(component.area(null, null)).toContain("Syntaxis error");       
+    });
+
+    it('should return "Syntaxis error" when "base" or "altura" are null', () => {
+        expect(component.area(null, 6)).toContain("Syntaxis error");       
+    });
+
+    it('should return "Syntaxis error" when "base" or "altura" are null', () => {
+        expect(component.area(3, null)).toContain("Syntaxis error");       
+    });
+
     it('should return "Datos erroneos" when "base" and "altura" are negative numbers', () => {
         expect(component.area(-3, -3)).toContain("Datos erroneos");       
     });
