@@ -9,6 +9,12 @@ export class calcular {
 
     area(base,altura){
         
+        if(base == null && altura == null) 
+            return "Syntaxis error";
+        
+        if(base == null || altura == null) 
+            return "Syntaxis error";
+        
         if(Math.sign(base) === -1 && Math.sign(altura) === -1)
             return "Datos erroneos";
             
