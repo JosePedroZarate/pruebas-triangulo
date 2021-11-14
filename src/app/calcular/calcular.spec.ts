@@ -11,11 +11,23 @@ describe('calcular', () => {
         expect(component).toBeTruthy();
     });
 
+    it('should return "Datos erroneos" when "base" and "altura" are negative numbers', () => {
+        expect(component.area(-3, -3)).toContain("Datos erroneos");       
+    });
+
+    it('should return "Datos erroneos" when "base" or "altura" are negative numbers', () => {
+        expect(component.area(-3, 6)).toContain("Datos erroneos");       
+    });
+
+    it('should return "Datos erroneos" when "base" or "altura" are negative numbers', () => {
+        expect(component.area(3,-6)).toContain("Datos erroneos");       
+    });
+
     it('should return "Syntaxis error" when "base" and "altura" are not a number', () => {
         expect(component.area("a","b")).toContain("Syntaxis error");       
     });
 
-    it('should return "Syntaxis error" when "base" o "altura" are not a number', () => {
+    it('should return "Syntaxis error" when "base" or "altura" are not a number', () => {
         expect(component.area(3,"b")).toContain("Syntaxis error");       
     });
 

@@ -7,7 +7,13 @@ export class calcular {
     altura=undefined;
   
 
-    area(base,altura){  
+    area(base,altura){
+        
+        if(Math.sign(base) === -1 && Math.sign(altura) === -1)
+            return "Datos erroneos";
+            
+        if(Math.sign(base) === -1 || Math.sign(altura) === -1)
+            return "Datos erroneos";
 
         if(typeof (base) !== "number" && typeof (altura) !== "number")
             return "Syntaxis error";
