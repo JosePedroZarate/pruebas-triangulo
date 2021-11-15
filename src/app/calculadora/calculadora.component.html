@@ -1,0 +1,51 @@
+<div class="container d-flex align-items-center justify-content-center wh-100 shadow p-5" style="margin-top:100px;">
+    <div class="row">
+        <div class="col-4 ">
+            <p class="text-center p-4"><img src="../assets/imagenes/formula-del-area-de-un-triangulo.png" alt="" style="width: 100%"></p>
+         </div> 
+        
+           <div class="col-8 ">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Area del triangulo</h1>
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col-12">
+                        <form class="row g-3 p-5">
+                            <div class="col-3">
+                                <input type="text" class="form-control operator1" style ="text-align:right" placeholder="Base" id="base"  name="base" [(ngModel)]="base" >
+                            </div>
+                            <div class="col-1">
+                                <h6>*</h6>
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control operator2" style ="text-align:right" placeholder="Altura" id="altura" name="altura" [(ngModel)]="altura">
+                            </div>
+                            <div class="col-1">
+                                <h6>=</h6>
+                            </div>
+                            <div class="col-4">
+                                <label class="form-control result " style ="text-align:right">{{ area }}</label>
+                            </div>
+                            <div class="col-8  text-center">
+                                <h2>_________________________</h2>
+                                <h2>2</h2>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger" type="button" (click)="calcular_area()">Calcular</button>
+                          </div>
+                    </div>
+                </div> 
+
+           </div>
+        </div>  
+
+</div>

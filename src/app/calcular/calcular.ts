@@ -8,7 +8,16 @@ export class calcular {
   
 
     area(base,altura){
+
+        /** 
+         * Conversion de valores entrantes a decimales
+        */
+        if(base == (parseFloat(base))) base= parseFloat(base);
+        if(altura == (parseFloat(altura))) altura= parseFloat(altura);
         
+         /** 
+         * Codigo que resuelve las pruebas
+        */
         if(base === undefined && altura === undefined) 
             return "Syntaxis error";
         
