@@ -30,3 +30,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Proyecto de segundo parcial para pruebas de software
 
 # v0.1 tag
+
+
+# Diagrama de arquitectura
+
+![diagrama_arquitectura](https://user-images.githubusercontent.com/71337870/141846019-51c575a5-a2ed-4628-84eb-479430988148.png)
+
+# Documentación
+PDF - Documento vision y alcance
+[documentacion.pdf](https://github.com/JosePedroZarate/pruebas-triangulo/files/7541504/documentacion.pdf)
+
+Documento PDF y archuivo .tex (latext)
+
+[Documentacion.zip](https://github.com/JosePedroZarate/pruebas-triangulo/files/7541523/Documentacion.zip)
+
